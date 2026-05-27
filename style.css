@@ -3612,9 +3612,9 @@ ul { list-style: none; }
 /* ===== WHATSAPP MOBILE UN PEU PLUS GRAND ===== */
 @media (max-width: 768px) {
   .whatsapp-float {
-    width: 50px !important;
-    height: 50px !important;
-    font-size: 1.35rem !important;
+    width: 54px !important;
+    height: 54px !important;
+    font-size: 1.45rem !important;
     right: 16px !important;
     bottom: 18px !important;
   }

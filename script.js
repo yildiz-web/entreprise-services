@@ -36,14 +36,14 @@ overlay.className = 'nav-overlay';
 document.body.appendChild(overlay);
 
 function openMenu() {
-  hamburger.classList.add('active');
+  hamburger.classList.add('open');
   navLinks.classList.add('open');
   overlay.classList.add('show');
   document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
-  hamburger.classList.remove('active');
+  hamburger.classList.remove('open');
   navLinks.classList.remove('open');
   overlay.classList.remove('show');
   document.body.style.overflow = '';
@@ -57,7 +57,7 @@ hamburger.addEventListener('click', () => {
 overlay.addEventListener('click', closeMenu);
 
 /* Ferme au clic sur un lien */
-navLinks.querySelectorAll('.nav-link').forEach(link => {
+document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
@@ -240,6 +240,25 @@ form.addEventListener('submit', (e) => {
   }, 1500);
 });
 
+
+/* ── TOGGLE SERVICES ────────────────────────────────── */
+const toggleServicesBtn = document.getElementById('toggleServices');
+const servicesGrid      = document.querySelector('.services-grid');
+
+if (toggleServicesBtn && servicesGrid) {
+  toggleServicesBtn.addEventListener('click', () => {
+    const isOpen = servicesGrid.classList.toggle('show-all');
+    if (isOpen) {
+      toggleServicesBtn.innerHTML = '<i class="fa-solid fa-chevron-up"></i>&nbsp; Voir moins';
+      servicesGrid.querySelectorAll('.service-hidden').forEach((card, i) => {
+        setTimeout(() => card.classList.add('visible'), i * 90);
+      });
+    } else {
+      toggleServicesBtn.innerHTML = '<i class="fa-solid fa-chevron-down"></i>&nbsp; Voir plus de services';
+    }
+  });
+}
+
 /* ── 7. COMPTEUR ANIMÉ POUR LES STATS HERO ───────────── */
 function animateCounter(el, target, duration = 1500, suffix = '') {
   const start     = 0;
@@ -310,6 +329,37 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+
+/* ── SLIDER AVIS MOBILE ─────────────────────────────── */
+const avisCards = document.querySelectorAll('.avis-card');
+const avisPrev  = document.querySelector('.avis-prev');
+const avisNext  = document.querySelector('.avis-next');
+const avisDots  = document.querySelectorAll('.avis-dot');
+let   currentAvis = 0;
+
+function showAvis(index) {
+  if (!avisCards.length) return;
+  avisCards.forEach((card, i) => card.classList.toggle('active', i === index));
+  avisDots.forEach((dot, i)  => dot.classList.toggle('active', i === index));
+}
+
+if (avisCards.length && avisPrev && avisNext) {
+  /* Premier avis actif au chargement (mobile uniquement via CSS) */
+  showAvis(currentAvis);
+
+  avisNext.addEventListener('click', () => {
+    currentAvis = (currentAvis + 1) % avisCards.length;
+    showAvis(currentAvis);
+  });
+  avisPrev.addEventListener('click', () => {
+    currentAvis = (currentAvis - 1 + avisCards.length) % avisCards.length;
+    showAvis(currentAvis);
+  });
+  avisDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { currentAvis = i; showAvis(i); });
+  });
+}
+
 /* ── 9. ANIMATION PULSE SUR LE BOUTON WHATSAPP ────────── */
 const waFloat = document.querySelector('.whatsapp-float');
 if (waFloat) {
@@ -319,3 +369,51 @@ if (waFloat) {
     setTimeout(() => { waFloat.style.transform = ''; }, 300);
   }, 4000);
 }
+
+/* === SERVICES : Voir plus / moins === */
+function toggleServices() {
+  const extra = document.getElementById('services-extra');
+  const btn = document.getElementById('btnVoirServices');
+  const icon = document.getElementById('iconVoirServices');
+
+  if (!extra || !btn) return;
+
+  const visible = extra.style.display !== 'none';
+  extra.style.display = visible ? 'none' : 'contents';
+  btn.innerHTML = visible
+    ? '<i class="fa-solid fa-chevron-down" id="iconVoirServices"></i> Voir plus de services'
+    : '<i class="fa-solid fa-chevron-up" id="iconVoirServices"></i> Voir moins';
+}
+
+/* === AVIS : Slider mobile === */
+let avisIndex = 0;
+
+function initAvis() {
+  const cards = document.querySelectorAll('.avis-card');
+
+  if (!cards.length) return;
+
+  if (window.innerWidth > 768) {
+    cards.forEach(c => c.classList.remove('active'));
+    return;
+  }
+
+  cards.forEach((c, i) => c.classList.toggle('active', i === avisIndex));
+}
+
+function avisSlide(dir) {
+  const cards = document.querySelectorAll('.avis-card');
+
+  if (!cards.length) return;
+
+  avisIndex = (avisIndex + dir + cards.length) % cards.length;
+  initAvis();
+}
+
+window.addEventListener('load', initAvis);
+window.addEventListener('resize', initAvis);
+
+/* Rendre les fonctions disponibles pour les onclick du HTML */
+window.toggleServices = toggleServices;
+window.avisSlide = avisSlide;
+

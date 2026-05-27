@@ -46,68 +46,57 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="accueil">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
+    <!-- Image de fond + overlay -->
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
 
     <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge reveal">
-          <i class="fa-solid fa-certificate"></i>
-          <span>Entreprise certifiée · Satisfaction garantie</span>
+
+      <!-- Badge de confiance -->
+      <div class="hero-trust-badge reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Service fiable &amp; réactif</span>
+      </div>
+
+      <!-- Titre -->
+      <h1 class="hero-title reveal">
+        Des services <span class="gold">professionnels</span><br />
+        pour simplifier votre quotidien
+      </h1>
+
+      <!-- Sous-titre -->
+      <p class="hero-subtitle reveal">
+        NexaServices accompagne entreprises et particuliers avec des prestations fiables, rapides et adaptées à chaque besoin.
+      </p>
+
+      <!-- Boutons -->
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-gold">
+          <i class="fa-solid fa-paper-plane"></i> Demander un devis
+        </a>
+        <a href="#services" class="btn btn-outline-white">
+          <i class="fa-solid fa-chevron-down"></i> Découvrir nos services
+        </a>
+      </div>
+
+      <!-- Éléments de confiance -->
+      <div class="hero-trust reveal">
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-tag"></i>
+          <span>Devis gratuit</span>
         </div>
-        <h1 class="hero-title reveal">
-          Des services <span class="gold">professionnels</span><br />pour simplifier votre quotidien
-        </h1>
-        <p class="hero-subtitle reveal">
-          NexaServices accompagne les entreprises et les particuliers avec des prestations fiables, rapides et adaptées à chaque besoin.
-        </p>
-        <div class="hero-actions reveal">
-          <a href="#contact" class="btn btn-gold">
-            <i class="fa-solid fa-paper-plane"></i> Demander un devis
-          </a>
-          <a href="#services" class="btn btn-outline">
-            <i class="fa-solid fa-circle-play"></i> Voir nos services
-          </a>
+        <div class="hero-trust-sep"></div>
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Réponse sous 2h</span>
         </div>
-        <div class="hero-stats reveal">
-          <div class="stat">
-            <span class="stat-number">+500</span>
-            <span class="stat-label">Clients satisfaits</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">8</span>
-            <span class="stat-label">Années d'expérience</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">98%</span>
-            <span class="stat-label">Taux de satisfaction</span>
-          </div>
+        <div class="hero-trust-sep"></div>
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-star"></i>
+          <span>Satisfaction garantie</span>
         </div>
       </div>
 
-      <div class="hero-visual reveal">
-        <div class="hero-card-main">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Équipe professionnelle NexaServices" />
-          <div class="hero-card-overlay"></div>
-        </div>
-        <div class="hero-badge-float badge-top">
-          <i class="fa-solid fa-shield-halved gold"></i>
-          <span>Services Certifiés</span>
-        </div>
-        <div class="hero-badge-float badge-bottom">
-          <i class="fa-solid fa-clock gold"></i>
-          <span>Réponse en 2h</span>
-        </div>
-        <div class="hero-badge-float badge-left">
-          <i class="fa-solid fa-headset gold"></i>
-          <span>Accompagnement</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -164,11 +153,10 @@
           </div>
         </div>
 
+        <div id="services-extra" style="display:none;">
         <div class="service-card reveal">
           <div class="service-card-img">
-            <img src=
-            https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80
-            alt="Assistance Administrative" />
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80" alt="Assistance Administrative" />
           </div>
           <div class="service-card-body">
             <div class="service-icon-wrap"><i class="fa-solid fa-file-signature"></i></div>
@@ -180,9 +168,7 @@
 
         <div class="service-card reveal">
           <div class="service-card-img">
-            <img src=
-             https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80
-             alt="Maintenance Support" />
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80" alt="Maintenance Support" />
           </div>
           <div class="service-card-body">
             <div class="service-icon-wrap"><i class="fa-solid fa-screwdriver-wrench"></i></div>
@@ -194,9 +180,7 @@
 
         <div class="service-card reveal">
           <div class="service-card-img">
-            <img src=
-             https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&q=80
-             alt="Services Personnalisés" />
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&q=80" alt="Services Personnalisés" />
           </div>
           <div class="service-card-body">
             <div class="service-icon-wrap"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
@@ -205,7 +189,14 @@
             <a href="#contact" class="service-link">Demander ce service <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
+        </div><!-- fin #services-extra -->
 
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <button id="btnVoirServices" class="btn btn-outline" onclick="toggleServices()">
+          <i class="fa-solid fa-chevron-down" id="iconVoirServices"></i> Voir plus de services
+        </button>
       </div>
     </div>
   </section>
@@ -213,25 +204,15 @@
   <!-- ===================== À PROPOS ===================== -->
   <section class="apropos section" id="apropos">
     <div class="container apropos-grid">
-
-      <div class="apropos-visual reveal">
-        <div class="apropos-img-wrap">
-          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80" alt="L'équipe NexaServices" />
-        </div>
-        <div class="apropos-accent-card">
-          <i class="fa-solid fa-award gold fa-2x"></i>
-          <p>Leader en services<br />professionnels</p>
-        </div>
-      </div>
-
+      
       <div class="apropos-content reveal">
         <span class="section-tag">Qui sommes-nous</span>
         <h2 class="section-title">Pourquoi choisir <span class="gold">NexaServices</span> ?</h2>
         <p class="apropos-text">
-          Fondée par des professionnels passionnés, NexaServices est une agence de services multi-expertise qui place la satisfaction client au cœur de chaque mission. Nous intervenons aussi bien auprès des particuliers que des entreprises, avec une approche humaine, réactive et rigoureuse.
+         Nous ne proposons pas seulement un service : nous analysons votre besoin, nous vous orientons vers la meilleure solution et nous assurons un suivi clair jusqu’à la fin de la prestation.
         </p>
         <p class="apropos-text">
-          Notre engagement : vous offrir des prestations de haute qualité, dans les délais convenus, avec un interlocuteur dédié tout au long de votre projet.
+         Chaque demande est traitée avec méthode, transparence et réactivité afin de garantir un résultat sérieux, sans perte de temps ni complications inutiles.
         </p>
 
         <div class="apropos-points">
@@ -282,13 +263,12 @@
               <span class="price-amount">500 <span class="currency">DH</span></span>
             </div>
           </div>
+          <p class="pack-desc">Idéal pour une demande simple ou une intervention ponctuelle.</p>
           <ul class="pack-features">
             <li><i class="fa-solid fa-check"></i> 1 service au choix</li>
             <li><i class="fa-solid fa-check"></i> Intervention unique</li>
             <li><i class="fa-solid fa-check"></i> Devis en 24h</li>
             <li><i class="fa-solid fa-check"></i> Support par email</li>
-            <li class="disabled"><i class="fa-solid fa-xmark"></i> Suivi personnalisé</li>
-            <li class="disabled"><i class="fa-solid fa-xmark"></i> Services combinés</li>
           </ul>
           <a href="#contact" class="btn btn-outline pack-btn">Choisir ce pack</a>
         </div>
@@ -303,13 +283,12 @@
               <span class="price-amount">1500 <span class="currency">DH</span></span>
             </div>
           </div>
+          <p class="pack-desc">Le meilleur choix pour combiner plusieurs services avec un suivi personnalisé.</p>
           <ul class="pack-features">
             <li><i class="fa-solid fa-check"></i> 3 services combinés</li>
-            <li><i class="fa-solid fa-check"></i> Interventions régulières</li>
             <li><i class="fa-solid fa-check"></i> Devis en 4h</li>
             <li><i class="fa-solid fa-check"></i> Support téléphonique</li>
             <li><i class="fa-solid fa-check"></i> Suivi personnalisé</li>
-            <li class="disabled"><i class="fa-solid fa-xmark"></i> Conseiller dédié 24/7</li>
           </ul>
           <a href="#contact" class="btn btn-gold pack-btn">Choisir ce pack</a>
         </div>
@@ -323,13 +302,12 @@
               <span class="price-amount">2500 <span class="currency">DH</span></span>
             </div>
           </div>
+          <p class="pack-desc">Pour les besoins prioritaires, réguliers ou entièrement personnalisés.</p>
           <ul class="pack-features">
-            <li><i class="fa-solid fa-check"></i> Services illimités</li>
+            <li><i class="fa-solid fa-check"></i> Tous services disponibles</li>
             <li><i class="fa-solid fa-check"></i> Interventions prioritaires</li>
             <li><i class="fa-solid fa-check"></i> Devis en 1h</li>
             <li><i class="fa-solid fa-check"></i> Support WhatsApp dédié</li>
-            <li><i class="fa-solid fa-check"></i> Suivi personnalisé</li>
-            <li><i class="fa-solid fa-check"></i> Conseiller dédié 24/7</li>
           </ul>
           <a href="#contact" class="btn btn-outline pack-btn">Choisir ce pack</a>
         </div>
@@ -337,7 +315,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- ===================== AVIS ===================== -->
   <section class="avis section" id="avis">
@@ -348,57 +325,101 @@
         <p class="section-subtitle">La satisfaction de nos clients est notre plus belle récompense. Voici ce qu'ils pensent de nos services.</p>
       </div>
 
-      <div class="avis-grid">
+      <div class="avis-slider-wrap">
+        <div class="avis-grid" id="avisGrid">
 
-        <div class="avis-card reveal">
-          <div class="avis-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="avis-text">"NexaServices a pris en charge le nettoyage complet de nos bureaux en un temps record. Le résultat était impeccable et l'équipe très professionnelle. Je recommande vivement !"</p>
-          <div class="avis-author">
-            <div class="author-avatar">KA</div>
-            <div>
-              <strong>Karim Alaoui</strong>
-              <span>Directeur, Cabinet KA Consulting</span>
+          <div class="avis-card reveal">
+            <div class="avis-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
+            <p class="avis-text">"NexaServices a pris en charge le nettoyage complet de nos bureaux en un temps record. Le résultat était impeccable et l'équipe très professionnelle. Je recommande vivement !"</p>
+            <div class="avis-author">
+              <div class="author-avatar">KA</div>
+              <div>
+                <strong>Karim Alaoui</strong>
+                <span>Directeur, Cabinet KA Consulting</span>
+              </div>
+            </div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
           </div>
-          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+
+          <div class="avis-card reveal">
+            <div class="avis-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="avis-text">"J'ai fait appel à NexaServices pour une formation de mon équipe commerciale. Le formateur était excellent, le contenu adapté à notre secteur. Nos résultats ont nettement progressé depuis."</p>
+            <div class="avis-author">
+              <div class="author-avatar">SB</div>
+              <div>
+                <strong>Salma Benali</strong>
+                <span>Responsable RH, TechMaroc SARL</span>
+              </div>
+            </div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          </div>
+
+          <div class="avis-card reveal">
+            <div class="avis-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="avis-text">"Excellent service de livraison, ponctuel et soigné. Le suivi en temps réel et la communication avec l'équipe sont au top. NexaServices est désormais notre partenaire logistique attitré."</p>
+            <div class="avis-author">
+              <div class="author-avatar">YM</div>
+              <div>
+                <strong>Youssef Mansouri</strong>
+                <span>Gérant, Boutique Elégance</span>
+              </div>
+            </div>
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          </div>
+
         </div>
 
-        <div class="avis-card reveal">
-          <div class="avis-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="avis-text">"J'ai fait appel à NexaServices pour une formation de mon équipe commerciale. Le formateur était excellent, le contenu adapté à notre secteur. Nos résultats ont nettement progressé depuis."</p>
-          <div class="avis-author">
-            <div class="author-avatar">SB</div>
-            <div>
-              <strong>Salma Benali</strong>
-              <span>Responsable RH, TechMaroc SARL</span>
-            </div>
-          </div>
-          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="avis-nav" id="avisNav">
+          <button class="avis-prev" onclick="avisSlide(-1)" aria-label="Précédent">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <span id="avisDots"></span>
+          <button class="avis-next" onclick="avisSlide(1)" aria-label="Suivant">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-
-        <div class="avis-card reveal">
-          <div class="avis-stars">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <p class="avis-text">"Excellent service de livraison, ponctuel et soigné. Le suivi en temps réel et la communication avec l'équipe sont au top. NexaServices est désormais notre partenaire logistique attitré."</p>
-          <div class="avis-author">
-            <div class="author-avatar">YM</div>
-            <div>
-              <strong>Youssef Mansouri</strong>
-              <span>Gérant, Boutique Elégance</span>
-            </div>
-          </div>
-          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-        </div>
-
       </div>
     </div>
   </section>
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq section" id="faq">
+    <div class="container">
+     <div class="section-header reveal">
+       <span class="section-tag">Questions fréquentes</span>
+       <h2 class="section-title">Avant de <span class="gold">commencer</span></h2>
+       <p class="section-subtitle">Les réponses aux questions les plus fréquentes avant de demander un devis.</p>
+      </div>
 
+      <div class="faq-list reveal">
+        <details>
+          <summary>Est-ce que le devis est gratuit ?</summary>
+           <p>Oui, le devis est gratuit. Nous analysons votre besoin puis nous vous proposons une solution adaptée.</p>
+        </details>
+
+         <details>
+           <summary>En combien de temps répondez-vous ?</summary>
+           <p>Nous répondons généralement sous 2 heures pendant les horaires de disponibilité.</p>
+          </details>
+
+          <details>
+           <summary>Est-ce possible de demander un service personnalisé ?</summary>
+           <p>Oui, nous pouvons proposer une prestation sur mesure selon votre besoin, votre budget et vos contraintes.</p>
+          </details>
+
+          <details>
+           <summary>Travaillez-vous avec les particuliers et les entreprises ?</summary>
+           <p>Oui, NexaServices accompagne aussi bien les particuliers que les entreprises.</p>
+          </details>
+       </div>
+     </div>
+    </section>
+  
   <!-- ===================== CONTACT ===================== -->
   <section class="contact section" id="contact">
     <div class="container contact-grid">
@@ -514,6 +535,7 @@
             <li><a href="#apropos">À propos</a></li>
             <li><a href="#packs">Nos packs</a></li>
             <li><a href="#avis">Avis clients</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 

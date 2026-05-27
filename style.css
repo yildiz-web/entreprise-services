@@ -3576,3 +3576,45 @@ ul { list-style: none; }
     z-index: 998 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding-top: 82px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .hero-title {
+    font-size: 1.85rem !important;
+    line-height: 1.12 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 18px !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-container .hero-trust-item {
+    font-size: 0.68rem !important;
+    gap: 4px !important;
+  }
+
+  .hero .hero-container .hero-trust-item i {
+    font-size: 0.68rem !important;
+  }
+
+  .hero .hero-container .hero-trust {
+    gap: 6px !important;
+  }
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 1.1rem !important;
+    right: 14px !important;
+    bottom: 18px !important;
+  }
+}

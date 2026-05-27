@@ -3110,3 +3110,469 @@ ul { list-style: none; }
   }
 }
 
+/* =====================================================
+   RESET MOBILE RESPONSIVE PROPRE
+   À mettre tout à la fin du fichier style.css
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  /* Structure générale */
+  .container {
+    padding: 0 20px !important;
+  }
+
+  .section {
+    padding: 46px 0 !important;
+  }
+
+  .section-header {
+    margin-bottom: 26px !important;
+  }
+
+  .section-tag {
+    font-size: 0.72rem !important;
+    padding: 6px 14px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .section-subtitle {
+    display: block !important;
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    max-width: 92% !important;
+    margin: 10px auto 0 !important;
+  }
+
+  /* Navbar mobile */
+  .navbar {
+    background: rgba(13, 27, 42, 0.98) !important;
+    padding: 14px 0 !important;
+  }
+
+  .nav-logo {
+    font-size: 1.35rem !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  /* Hero mobile */
+  .hero {
+    min-height: auto !important;
+    padding: 0 !important;
+  }
+
+  .hero-container {
+    padding: 96px 20px 36px !important;
+  }
+
+  .hero-trust-badge {
+    font-size: 0.78rem !important;
+    padding: 8px 14px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-title {
+    font-size: 2.05rem !important;
+    line-height: 1.14 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-actions {
+    width: 100% !important;
+    margin-top: 18px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 15px 18px !important;
+    font-size: 0.98rem !important;
+  }
+
+  .hero-actions .btn-outline-white {
+    display: none !important;
+  }
+
+  /* Les 3 preuves en une seule ligne */
+  .hero .hero-container .hero-trust {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .hero .hero-container .hero-trust-item {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  .hero .hero-container .hero-trust-item i {
+    color: var(--gold, #c9a84c) !important;
+    font-size: 0.72rem !important;
+  }
+
+  .hero .hero-container .hero-trust-sep {
+    display: block !important;
+    width: 1px !important;
+    height: 14px !important;
+    background: rgba(255,255,255,0.35) !important;
+  }
+
+  /* Services mobile */
+  .services {
+    padding: 46px 0 !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .service-card {
+    border-radius: 20px !important;
+  }
+
+  .service-card-img {
+    height: 160px !important;
+  }
+
+  .service-card-body {
+    padding: 18px 18px !important;
+  }
+
+  .service-card-body .service-icon-wrap {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .service-card h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .service-card p {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+
+  #btnVoirServices {
+    padding: 12px 20px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Pourquoi nous mobile */
+  .apropos {
+    padding: 46px 0 !important;
+  }
+
+  .apropos-content {
+    padding: 28px 22px !important;
+    border-radius: 22px !important;
+  }
+
+  .apropos .section-title {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .apropos-text {
+    display: block !important;
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .apropos-points {
+    margin-top: 20px !important;
+    gap: 14px !important;
+  }
+
+  .apropos-point {
+    padding: 15px !important;
+    gap: 13px !important;
+    border-radius: 16px !important;
+  }
+
+  .point-icon {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .apropos-point h4 {
+    font-size: 1rem !important;
+  }
+
+  .apropos-point p {
+    font-size: 0.86rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Packs mobile */
+  .packs {
+    padding: 46px 0 !important;
+  }
+
+  .packs-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+  }
+
+  .pack-card {
+    padding: 26px 22px !important;
+    border-radius: 22px !important;
+  }
+
+  .pack-header {
+    margin-bottom: 16px !important;
+  }
+
+  .pack-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .pack-header h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .price-amount {
+    font-size: 1.65rem !important;
+  }
+
+  .pack-desc {
+    display: block !important;
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    margin: 12px 0 18px !important;
+  }
+
+  .pack-features {
+    gap: 9px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .pack-features li {
+    font-size: 0.88rem !important;
+  }
+
+  .pack-btn {
+    padding: 13px !important;
+    font-size: 0.94rem !important;
+  }
+
+  .pack-featured {
+    transform: none !important;
+  }
+
+  .packs-grid .pack-card:nth-child(1) {
+    order: 1 !important;
+  }
+
+  .packs-grid .pack-card:nth-child(2) {
+    order: 2 !important;
+  }
+
+  .packs-grid .pack-card:nth-child(3) {
+    order: 3 !important;
+  }
+
+  /* Avis mobile */
+  .avis {
+    padding: 46px 0 !important;
+  }
+
+  .avis-slider-wrap {
+    padding: 0 14px !important;
+  }
+
+  .avis-card {
+    padding: 24px 22px !important;
+    border-radius: 20px !important;
+  }
+
+  .avis-text {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .avis-author strong {
+    font-size: 0.95rem !important;
+  }
+
+  .avis-author span {
+    font-size: 0.82rem !important;
+  }
+
+  .avis-nav button {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .avis-nav .avis-prev {
+    left: -18px !important;
+  }
+
+  .avis-nav .avis-next {
+    right: -18px !important;
+  }
+
+  /* FAQ mobile */
+  .faq {
+    padding: 46px 0 !important;
+  }
+
+  .faq-list {
+    gap: 12px !important;
+  }
+
+  .faq-list details {
+    padding: 16px 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .faq-list summary {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .faq-list p {
+    font-size: 0.86rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Contact mobile */
+  .contact {
+    padding: 46px 0 !important;
+  }
+
+  .contact-grid {
+    gap: 28px !important;
+  }
+
+  .contact-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin: 12px 0 22px !important;
+  }
+
+  .contact-details {
+    gap: 14px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .detail-icon {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .contact-form-wrap {
+    padding: 26px 22px !important;
+    border-radius: 22px !important;
+  }
+
+  .form-group {
+    margin-bottom: 14px !important;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 14px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .form-group textarea {
+    min-height: 95px !important;
+  }
+
+  .btn-submit {
+    padding: 13px !important;
+  }
+
+  /* Footer mobile */
+  .footer-top {
+    padding: 34px 0 26px !important;
+  }
+
+  .footer-grid,
+  .footer-grid-compact {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .footer-logo {
+    font-size: 1.35rem !important;
+  }
+
+  .footer-brand p {
+    display: block !important;
+    font-size: 0.86rem !important;
+    line-height: 1.45 !important;
+    margin-top: 10px !important;
+  }
+
+  .footer-social {
+    margin-top: 16px !important;
+  }
+
+  .footer-col:nth-child(2) ul {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px 18px !important;
+  }
+
+  .footer-col ul li,
+  .footer-col ul a {
+    font-size: 0.84rem !important;
+  }
+
+  .footer-bottom {
+    padding: 12px 16px !important;
+    font-size: 0.76rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Boutons flottants */
+  .back-to-top {
+    display: none !important;
+  }
+
+  .whatsapp-float {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 1.2rem !important;
+    right: 16px !important;
+    bottom: 16px !important;
+    z-index: 998 !important;
+  }
+}
